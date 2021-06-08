@@ -1,0 +1,130 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.05rem;
+  color: #0c0047 !important;
+  background-repeat: repeat;
+  background-color: #ffffff;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+}
+
+/* loading */
+#overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgb(237 245 245 / 10%);
+  transition: 1s 0.4s;
+}
+#progress{
+  height:3px;
+  background:#2982a4;
+  position:absolute;
+  width:0;
+  top:0;
+}
+#progstat{
+  font-size:1.125rem;
+  letter-spacing: 3px;
+  position:absolute;
+  top:0;
+  margin-top:20px;
+  width:100%;
+  text-align:center;
+  color:#2982a4;
+}
+
+.dark-text {
+  color: #0c0047;
+}
+
+.light-text {
+  color: #ffffff;
+}
+
+a {
+  color: #1582a4;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+a:hover {
+  color: #a4d0d8;
+}
+
+h1 {
+  font-size: 2.34375rem; /* 36px */
+}
+
+.mrgT22i {
+  margin-top: 22px !important;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 980px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.follow-us-wrapper {
+  padding: 85px 0;
+}
+
+.follow-us-wrapper .title {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.follow-icons-list {
+  display: grid;
+  margin-top: 38px;
+  grid-column-gap: 16px;
+  grid-template-columns: auto auto auto;
+}
+
+.follow-icons-list i {
+  font-size: 3.75rem;
+}
+
+.btn {
+  font-weight: normal;
+  background-color: #1582a4 !important;
+  color: #ffffff !important;
+  border: 1px solid transparent !important;
+  -moz-border-radius: 4px !important;
+  -webkit-border-radius: 4px !important;
+  border-radius: 4px !important;
+}
+
+.footer-wrapper {
+  padding: 32px 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgb(132, 148, 165);
+  border-top: 1px solid #eee;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 0.978125rem;
+  }
+}
