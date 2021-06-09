@@ -12,15 +12,26 @@
     <title>eHuddle</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png" />
     <link
-      href="//fonts.googleapis.com/css?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="./assets/font-awesome/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./assets/bootstrap-3-4-1/bootstrap.min.css" />
     <link rel="stylesheet" href="./style/custom.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <!-- Scroll to top button -->
+    <button
+      id="btn-scroll-top"
+      onclick="topFunction()"
+      class="btn btn-scroll-top"
+    >
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </button>
     <!-- Loader -->
     <div id="overlay">
       <div id="progstat"></div>
@@ -331,17 +342,17 @@
         <h1 class="title">Follow us!</h1>
         <div class="follow-icons-list">
           <div class="text-right">
-            <a href="#">
+            <a href="https://www.facebook.com/EHuddle-108478351339510" target="_blank">
               <i class="fa fa-facebook-square"></i>
             </a>
           </div>
           <div class="text-center">
-            <a href="">
+            <a href="https://www.linkedin.com/company/72275573" target="_blank">
               <i class="fa fa-linkedin-square"></i>
             </a>
           </div>
           <div>
-            <a href="">
+            <a href="https://www.instagram.com/invites/contact/?i=1dm1hlubbxf07&amp;utm_content=ljlpjhu" target="_blank">
               <i class="fa fa-instagram"></i>
             </a>
           </div>
@@ -350,7 +361,13 @@
     </div>
     <div class="clearfix">
       <div class="container footer-wrapper">
-        &copy; ehuddle <span id="currentYear"></span>. All Rights Reserved.
+        <p>
+          <a href="./terms/">Terms</a> &
+          <a href="./privacy-policy/">Privacy Policy</a>
+        </p>
+        <p>
+          &copy; ehuddle <span id="currentYear"></span>. All Rights Reserved.
+        </p>
       </div>
     </div>
     <script src="./assets/common.js"></script>

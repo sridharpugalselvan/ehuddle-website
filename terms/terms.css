@@ -1,0 +1,49 @@
+.terms-wrapper {
+  width: 100%;
+  line-height: 22px;
+  font-size: 0.875rem;
+  padding: 50px 65px 28px;
+}
+
+.logo-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.page-title {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(12, 4, 66);
+}
+
+.terms-wrapper .sub-title {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.terms-wrapper p {
+  margin-bottom: 1rem;
+}
+
+.terms-wrapper .list {
+  padding-left: 75px;
+}
+
+@media screen and (max-width: 480px) {
+  .terms-wrapper {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .terms-wrapper .list {
+    padding-left: 30px;
+  }
+}

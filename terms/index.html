@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="eHuddle" property="og:title" />
+    <meta content="eHuddle" property="og:description" />
+    <meta content="eHuddle" name="description" />
+    <meta content="website" property="og:type" />
+
+    <title>eHuddle</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./../images/favicon.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./../assets/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./../assets/bootstrap-3-4-1/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./../style/custom.css" />
+    <link rel="stylesheet" href="./terms.css" />
+  </head>
+  <body>
+    <!-- Scroll to top button -->
+    <button
+      id="btn-scroll-top"
+      onclick="topFunction()"
+      class="btn btn-scroll-top"
+    >
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </button>
+    <!-- Loader -->
+    <div class="terms-wrapper">
+      <div class="logo-wrapper">
+        <a class="logo" href="./../index.html">
+          <svg
+            width="127"
+            height="37"
+            viewBox="0 0 127 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M53.8085 19.6895L55.66 21.5819C54.7421 22.5398 52.9726 23.177 51.457 23.177C48.3906 23.177 46 20.925 46 17.7542C46 14.642 48.289 12.39 51.2968 12.39C54.5233 12.39 56.4178 14.8414 56.4178 18.7316H48.9882C49.3281 19.8498 50.2226 20.6044 51.4374 20.6044C52.2538 20.6044 53.2499 20.2252 53.8085 19.6895ZM49.0273 16.636H53.6288C53.3515 15.6195 52.5937 14.9626 51.4179 14.9626C50.3242 14.9626 49.4062 15.5999 49.0273 16.636Z"
+              fill="#0C0047"
+            ></path>
+            <path
+              d="M70.5545 9.23901V22.9349H67.6249V17.2736H61.3906V22.9349H58.4609V9.23901H61.3906V14.6228H67.6249V9.23901H70.5545Z"
+              fill="#1582A4"
+            ></path>
+            <path
+              d="M82.9452 12.6273V22.9335H80.0351V21.6393C79.4179 22.5777 78.2617 23.1759 76.9257 23.1759C74.6953 23.1759 73.1016 21.522 73.1016 19.1879V12.6273H75.9101V18.5702C75.9101 19.8447 76.707 20.7244 77.8632 20.7244C79.0781 20.7244 80.0155 19.8487 80.0155 18.7305L80.0351 18.7891V12.6273H82.9452Z"
+              fill="#1582A4"
+            ></path>
+            <path
+              d="M96.0194 9V22.9383H93.1093V21.4643C92.2929 22.5395 91.0976 23.1807 89.6445 23.1807C86.8945 23.1807 84.9023 20.9482 84.9023 17.7774C84.9023 14.6262 86.8945 12.3937 89.6445 12.3937C91.0976 12.3937 92.2929 13.031 93.1093 14.1101V9H96.0194ZM93.1093 17.7735C93.1093 16.061 92.0155 14.8412 90.4804 14.8412C88.8671 14.8412 87.7304 16.0571 87.7304 17.7735C87.7304 19.5094 88.8671 20.7254 90.4804 20.7254C92.0155 20.7254 93.1093 19.5094 93.1093 17.7735Z"
+              fill="#1582A4"
+            ></path>
+            <path
+              d="M109.176 9V22.9383H106.266V21.4643C105.449 22.5395 104.254 23.1807 102.801 23.1807C100.051 23.1807 98.0586 20.9482 98.0586 17.7774C98.0586 14.6262 100.051 12.3937 102.801 12.3937C104.254 12.3937 105.449 13.031 106.266 14.1101V9H109.176ZM106.266 17.7735C106.266 16.061 105.172 14.8412 103.637 14.8412C102.023 14.8412 100.887 16.0571 100.887 17.7735C100.887 19.5094 102.023 20.7254 103.637 20.7254C105.172 20.7254 106.266 19.5094 106.266 17.7735Z"
+              fill="#1582A4"
+            ></path>
+            <path
+              d="M111.719 9H114.629V22.9383H111.719V9Z"
+              fill="#1582A4"
+            ></path>
+            <path
+              d="M124.391 19.6895L126.242 21.5819C125.324 22.5398 123.555 23.177 122.039 23.177C118.973 23.177 116.582 20.925 116.582 17.7542C116.582 14.642 118.875 12.39 121.879 12.39C125.105 12.39 127 14.8414 127 18.7316H119.57C119.91 19.8498 120.805 20.6044 122.019 20.6044C122.836 20.6044 123.832 20.2252 124.391 19.6895ZM119.609 16.636H124.211C123.934 15.6195 123.176 14.9626 122 14.9626C120.906 14.9626 119.988 15.5999 119.609 16.636Z"
+              fill="#1582A4"
+            ></path>
+            <path
+              d="M12.9411 33.0807C7.57693 31.2759 3.48114 26.6828 2.38595 21.0322C2.57593 21.1705 2.76731 21.299 2.96009 21.4164C3.40571 21.6888 3.8639 21.9039 4.3165 22.0534C4.84873 22.2322 5.39632 22.33 5.94252 22.3453C5.997 22.3481 6.05148 22.3481 6.10596 22.3481C7.33945 22.3481 8.42067 21.964 9.23508 21.2348C9.68768 20.8269 10.0425 20.3282 10.2912 19.7498C10.5342 19.1841 10.6613 18.5569 10.6613 17.9324C10.6613 17.424 10.5817 16.9336 10.4239 16.481C10.2311 15.9153 9.93075 15.4152 9.52564 14.9891C9.41109 14.8676 9.28816 14.7544 9.16104 14.6525C9.0451 14.5575 8.92217 14.4681 8.80343 14.3926C8.05468 13.9065 7.14807 13.6606 6.10596 13.6606C5.96487 13.6606 5.84055 13.6648 5.72321 13.6732C4.71043 13.7375 3.71862 14.0644 2.77569 14.6455C2.64997 14.7223 2.52564 14.8047 2.40132 14.8899C1.56456 15.4739 0.762722 16.2673 0.0153662 17.2549C0.0055877 17.5022 0 17.7508 0 18.0009C0 18.2021 0.00279385 18.4032 0.00977848 18.603C0.293354 27.1731 6.59628 34.2457 14.8172 35.7181C14.1313 35.0015 13.4342 34.1102 12.9411 33.0807ZM3.87507 16.4294C4.52464 16.0298 5.19237 15.8063 5.8615 15.7644L5.88106 15.763C5.94392 15.7588 6.01796 15.756 6.10596 15.756C6.72759 15.756 7.26541 15.8915 7.66912 16.1542C7.7264 16.1905 7.78227 16.231 7.83396 16.2743L7.84514 16.2841C7.90241 16.3288 7.95689 16.3791 8.00858 16.4335C8.20135 16.6361 8.34663 16.8792 8.44302 17.1613C8.52404 17.3988 8.56595 17.6572 8.56595 17.9324C8.56595 18.2747 8.4975 18.6169 8.36619 18.9229C8.23767 19.2204 8.05887 19.4733 7.83536 19.6744C7.4065 20.0586 6.82538 20.2527 6.10596 20.2527C6.0892 20.2541 6.07244 20.2541 6.05707 20.2527L6.01097 20.2513C5.66873 20.243 5.32368 20.1815 4.98004 20.0655C4.67272 19.9636 4.3612 19.8169 4.05108 19.6283C3.41269 19.24 2.77709 18.6742 2.15546 17.938C2.71423 17.2954 3.28976 16.7898 3.87507 16.4294Z"
+              fill="#0C0047"
+            ></path>
+            <path
+              d="M17.2148 35.9846C17.4733 35.9958 17.7331 36.0014 17.9943 36.0014C18.1703 36.0014 18.3478 35.9986 18.5224 35.9944L17.2148 35.9846Z"
+              fill="#1582A4"
+            ></path>
+            <path
+              d="M33.0968 22.9995C31.3003 28.4196 26.6625 32.5531 20.9561 33.6301C21.1042 33.4303 21.2397 33.2292 21.3626 33.0266C21.6336 32.581 21.8487 32.1228 21.9982 31.6702C22.177 31.138 22.2762 30.5904 22.2902 30.0442C22.293 29.9897 22.2943 29.9352 22.2943 29.8808C22.2943 28.6473 21.9088 27.566 21.1796 26.7516C20.7717 26.299 20.273 25.9442 19.6947 25.6956C19.1303 25.4539 18.5017 25.3254 17.8773 25.3254C17.3688 25.3254 16.8785 25.405 16.4259 25.5629C15.8615 25.7542 15.36 26.056 14.9339 26.4597C14.8138 26.5756 14.7007 26.6986 14.5987 26.8257C14.5023 26.9416 14.4129 27.0646 14.3375 27.1833C13.8513 27.9306 13.6055 28.8386 13.6055 29.8808C13.6055 30.0218 13.6097 30.1462 13.6194 30.2621C13.6823 31.2763 14.0092 32.2681 14.5903 33.2096C14.6685 33.3381 14.7523 33.4653 14.8404 33.591C15.4285 34.4319 16.2261 35.2352 17.2179 35.9853C17.4764 35.9965 17.7362 36.0021 17.9974 36.0021C18.1734 36.0021 18.3508 35.9993 18.5254 35.9951C27.1529 35.745 34.28 29.3932 35.7286 21.1136C35.0162 21.7995 34.1263 22.5008 33.0968 22.9995ZM20.199 29.9269L20.1962 29.9757C20.1878 30.318 20.1263 30.663 20.0104 31.0067C19.9098 31.314 19.7631 31.6255 19.5731 31.9356C19.1848 32.574 18.619 33.2096 17.8829 33.8313C17.2403 33.2725 16.7346 32.697 16.3742 32.1116C15.9747 31.4621 15.7511 30.7943 15.7106 30.1252L15.7092 30.1071C15.7037 30.0428 15.7009 29.9688 15.7009 29.8808C15.7009 29.2591 15.8378 28.7213 16.1004 28.3162C16.1367 28.2603 16.1758 28.2058 16.2191 28.1528L16.2289 28.1402C16.2736 28.0843 16.3253 28.0298 16.3784 27.9781C16.5809 27.7854 16.8254 27.6401 17.1076 27.5437C17.3436 27.4627 17.6035 27.4208 17.8773 27.4208C18.2209 27.4208 18.5632 27.4892 18.8677 27.6205C19.1652 27.749 19.4195 27.9279 19.6206 28.1514C20.0048 28.5802 20.199 29.1613 20.199 29.8808V29.9269Z"
+              fill="#1582A4"
+            ></path>
+            <path
+              d="M35.9908 17.4504L35.9866 18.7076C35.995 18.4729 35.9992 18.2382 35.9992 18.0007C35.9992 17.8163 35.9964 17.6334 35.9908 17.4504ZM33.6007 21.0921C33.7054 21.0195 33.8102 20.9427 33.9136 20.8602C33.8102 20.9413 33.7054 21.0181 33.6007 21.0907V21.0921ZM30.7942 15.8844C30.8585 15.9026 30.9227 15.9221 30.987 15.9445C31.0261 15.957 31.0638 15.9696 31.103 15.9836C31.0638 15.9696 31.0261 15.9556 30.987 15.9431C30.9227 15.9221 30.8585 15.9026 30.7942 15.8844ZM27.0742 21.5573C27.1036 21.5783 27.1343 21.5978 27.1636 21.6174C27.2335 21.6621 27.3047 21.7054 27.3774 21.7459C27.3047 21.7054 27.2335 21.6607 27.1636 21.616C27.1343 21.5964 27.1036 21.5769 27.0742 21.5573Z"
+              fill="#0C0047"
+            ></path>
+            <path
+              d="M21.082 0.266113C21.7651 0.978545 22.4608 1.8642 22.9539 2.88814C28.3824 4.66922 32.5312 9.30143 33.6222 15.0065C33.6013 14.9911 33.5789 14.9743 33.558 14.9604C33.5063 14.9213 33.4546 14.8849 33.4029 14.85C33.4001 14.8472 33.3959 14.8444 33.3931 14.843C33.3303 14.7983 33.2674 14.7564 33.2032 14.7159C33.1389 14.6726 33.0732 14.6321 33.009 14.593C32.5634 14.3206 32.1052 14.1055 31.6512 13.956C31.1189 13.7772 30.5727 13.6794 30.0252 13.664C29.9721 13.6612 29.9162 13.6612 29.8631 13.6612C28.6296 13.6612 27.5484 14.0454 26.734 14.776C26.2814 15.1825 25.9266 15.6812 25.6779 16.2595C25.4349 16.8253 25.3077 17.4539 25.3077 18.0769C25.3077 18.5854 25.3874 19.0757 25.5452 19.5297C25.7366 20.0941 26.0383 20.5956 26.442 21.0216C26.558 21.1418 26.6809 21.2549 26.808 21.3569C26.8946 21.4281 26.9854 21.4966 27.0762 21.5581C27.1056 21.5776 27.1363 21.5972 27.1656 21.6167C27.2355 21.6614 27.3067 21.7061 27.3794 21.7466C27.452 21.7885 27.5274 21.8277 27.6029 21.8654C27.7705 21.9478 27.9451 22.019 28.1267 22.0805C28.3153 22.1448 28.5109 22.1965 28.712 22.237C28.733 22.2425 28.7553 22.2467 28.7763 22.2495C28.8853 22.2705 28.9942 22.2886 29.1074 22.3026C29.3504 22.3333 29.6033 22.3487 29.8631 22.3487C30.0042 22.3487 30.1285 22.3445 30.2445 22.3361C31.2586 22.2719 32.2505 21.945 33.192 21.3639C33.2646 21.3192 33.3359 21.2745 33.4071 21.227C33.4728 21.1837 33.537 21.139 33.6027 21.0929V21.0915C33.7074 21.0188 33.8122 20.942 33.9156 20.861C33.9184 20.8596 33.9212 20.8568 33.924 20.8554C34.0218 20.7786 34.1209 20.6989 34.2187 20.6165C34.2718 20.5704 34.3235 20.5257 34.3766 20.4782C34.4199 20.4405 34.4646 20.4 34.5079 20.3595C34.7258 20.1597 34.9423 19.9446 35.1533 19.7141C35.2105 19.6513 35.2678 19.5884 35.3237 19.5241C35.4941 19.3328 35.6617 19.1316 35.8252 18.9207C35.8797 18.8508 35.9341 18.781 35.9886 18.7097V18.7083L35.9928 17.4511C35.733 8.82228 29.3686 1.70076 21.082 0.266113ZM32.6388 19.2C32.5676 19.2573 32.4949 19.3104 32.4223 19.3621C32.3133 19.4403 32.203 19.513 32.094 19.58C31.4444 19.9809 30.7767 20.2044 30.1076 20.2449L30.088 20.2463C30.0252 20.2519 29.9511 20.2533 29.8631 20.2533C29.2415 20.2533 28.7037 20.1178 28.2999 19.8552C28.2594 19.8287 28.2189 19.8007 28.1798 19.7714C28.1644 19.7588 28.1491 19.7476 28.1351 19.7365L28.1239 19.7267L28.1225 19.7253C28.0667 19.6806 28.0122 19.6303 27.9605 19.5772C27.7677 19.3733 27.6224 19.1302 27.5261 18.848C27.4855 18.7307 27.4548 18.6064 27.4339 18.4764C27.4185 18.38 27.4087 18.2809 27.4045 18.1789C27.4031 18.1454 27.4031 18.1118 27.4031 18.0769C27.4031 17.7347 27.4716 17.3924 27.6029 17.0865C27.7314 16.7903 27.9102 16.5361 28.1337 16.3349C28.5626 15.9508 29.1437 15.7566 29.8631 15.7566H29.9106L29.9581 15.7594C30.1718 15.7636 30.387 15.7901 30.6021 15.8376C30.6663 15.8516 30.7306 15.867 30.7963 15.8851C30.8605 15.9033 30.9248 15.9229 30.989 15.9438C31.0281 15.9564 31.0659 15.9704 31.105 15.9843C31.1427 15.9983 31.1818 16.0137 31.2209 16.029C31.4514 16.1212 31.6847 16.24 31.918 16.3824C32.3566 16.6479 32.7939 16.9999 33.2255 17.4315C33.266 17.4706 33.3051 17.5112 33.3442 17.5517C33.4225 17.6327 33.5007 17.7165 33.5789 17.8031C33.6572 17.8897 33.7354 17.9791 33.8122 18.0713C33.4295 18.5128 33.0369 18.8899 32.6388 19.2Z"
+              fill="#0C0047"
+            ></path>
+            <path
+              d="M22.2806 5.72879C22.2164 4.71463 21.8895 3.72281 21.3097 2.78128C21.2287 2.64997 21.1435 2.52005 21.0527 2.39154C20.4688 1.55618 19.6753 0.759928 18.6919 0.0125723C18.6919 0.0125723 18.6919 0.0125723 18.6905 0.0125723C18.4614 0.00419078 18.2295 0 17.9976 0C17.7825 0 17.5674 0.00419078 17.355 0.0111754C8.7891 0.312911 1.72624 6.62981 0.273438 14.8577C0.987267 14.176 1.87571 13.4817 2.90106 12.9914C4.68912 7.61604 9.27244 3.50768 14.9188 2.39573C14.7805 2.58431 14.6534 2.7743 14.5374 2.96428C14.2664 3.4099 14.0513 3.86809 13.9018 4.32209C13.723 4.85432 13.6239 5.40052 13.6099 5.94811C13.6071 6.00119 13.6057 6.05707 13.6057 6.11015C13.6057 7.34364 13.9913 8.42486 14.7204 9.23927C15.127 9.69187 15.6271 10.0467 16.2054 10.2953C16.7697 10.5384 17.3984 10.6655 18.0228 10.6655C18.5313 10.6655 19.0202 10.5859 19.4742 10.4281C20.0385 10.2367 20.54 9.93494 20.9661 9.53123C21.0876 9.41528 21.2008 9.29235 21.3028 9.16523C21.3978 9.04929 21.4858 8.92636 21.5626 8.80762C22.0473 8.06026 22.2946 7.15226 22.2946 6.11015C22.2946 5.96907 22.2904 5.84474 22.2806 5.72879ZM19.7997 7.67332C19.7633 7.73059 19.7242 7.78647 19.6809 7.83815L19.6712 7.85072C19.6265 7.9066 19.5748 7.96108 19.5217 8.01277C19.3191 8.20554 19.0747 8.35082 18.7939 8.44721C18.5564 8.52963 18.2966 8.57014 18.0228 8.57014C17.6805 8.57014 17.3369 8.50169 17.0324 8.37038C16.7348 8.24186 16.4806 8.06306 16.2794 7.83955C15.8953 7.41069 15.7011 6.82957 15.7011 6.11015V6.06126L15.7039 6.01516C15.7123 5.67292 15.7737 5.32788 15.8897 4.98423C15.9903 4.67691 16.1369 4.36539 16.3269 4.05528C16.7139 3.41688 17.281 2.78268 18.0158 2.16104C18.6598 2.71842 19.1655 3.29395 19.5259 3.87926C19.9254 4.52883 20.1489 5.19657 20.1894 5.86569L20.1908 5.88525C20.1964 5.94811 20.1992 6.02215 20.1992 6.11015C20.1992 6.73179 20.0623 7.2696 19.7997 7.67332Z"
+              fill="#1582A4"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <h1 class="page-title">Terms and Conditions</h1>
+      <div>
+        <p>
+          Thanks for using our products and services ("Services"). The Services
+          are provided by eHuddle Ltd ("Company Name"), registered at Unit 2
+          City Limits, Danehill, Reading, Berkshire, England, RG6 4UP (Company
+          Number 13239544).
+        </p>
+        <p>
+          By using our Services, you are agreeing to these terms. Please read
+          these Terms and Conditions ("Terms", "Terms and Conditions") carefully
+          before using the www.ehuddle.io website or any of the products or
+          services operated by eHuddle ("us, "we", or "our").
+        </p>
+        <p>
+          This agreement, along with our Privacy Policy, constitutes the entire
+          agreement ("Agreement") between the parties and supersedes all
+          previous Agreements (written or oral) between each party.
+        </p>
+        <p>
+          eHuddle is the provider of software, which allows coaches to manage
+          their coaching business and client sessions.
+        </p>
+        <h4 class="sub-title">1. Terminology</h4>
+        <p>
+          1.1 The following terminology applies to these Terms and Conditions,
+          Privacy Statement and any or all Agreements created from time to time:
+        </p>
+        <ol class="list" type="i">
+          <li>
+            "User", "You" and "Your" refers to you, the person accessing our
+            website and services, and accepting our terms and conditions;
+          </li>
+          <li>
+            "The Company", "eHuddle", "Ourselves", "We" and "Us" refer to our
+            Company;
+          </li>
+          <li>
+            "Party", "Parties" or "Us" refer to both you and us, or either the
+            User or ourselves.
+          </li>
+        </ol>
+        <p>
+          1.2 All terms refer to the offer, acceptance and consideration of
+          payment necessary to undertake the process of Service Provision to the
+          User in the most appropriate manner, with the express purpose of
+          meeting user needs in terms of providing the eHuddle declared
+          Services, in accordance with and subject to all applicable Laws. Any
+          use of the above terminology or other words in the singular, plural,
+          non-capital letters are considered interchangeable and therefore a
+          reference to them.
+        </p>
+        <h4 class="sub-title">2. Using our Services</h4>
+        <p>
+          2.1 You must follow any policies or guidelines made available to you
+          within the Services. You must not misuse our Services. For example,
+          don’t interfere with our Services or try to access them using a method
+          other than the interface and the instructions we provide. You may use
+          our Services only as permitted by law, including regulations. We may
+          suspend or stop providing Services to you if you do not comply with
+          the Agreement or if we are investigating suspected misconduct.
+        </p>
+        <p>
+          2.2 Using our Services does not give you ownership or any intellectual
+          property rights in our Services or the content offered to you by
+          eHuddle. You may not use content from our Services unless you obtain
+          permission from us as the owner or are otherwise permitted by law, or
+          indeed you own the content directly. These terms do not grant you the
+          right to use any branding, coaching materials or tools, or logos used
+          in our Services. Do not remove, obscure, or alter any legal notices
+          displayed in or along with our Services.
+        </p>
+        <p>
+          2.3 In connection with your use of the Services, we may send you
+          service messages and other information relating to our system. You may
+          opt out of receiving any promotional communications from us, but we
+          are legally required to provide you with messages in relation to our
+          Services availability and functionality, and any material changes we
+          make.
+        </p>
+        <p>
+          2.4 All Users of the Service must be over 16 years old. If Coaches
+          wish to offer sessions to individuals under the age of 16, You are
+          solely responsible for obtaining parental/guardian explicit permission
+          to do so. You must retain a copy of this consent, and provide eHuddle
+          with a copy of the consent without delay. Please contact the eHuddle
+          team before agreeing to coach any persons under 16.
+        </p>
+        <h4 class="sub-title">3. Privacy Statement</h4>
+        <p>
+          3.1 We are committed to protecting your privacy. eHuddle’s privacy
+          policy explains how we handle your personal data and protect your
+          privacy when you use our Services. By using our Services, you agree
+          that eHuddle can use such data in accordance with our privacy policy,
+          which you have read and understood.
+        </p>
+        <p>
+          3.2 We provide the option of using Alias in place of names when
+          storing client data on the system. We recommend using Alias to protect
+          the identity of the Client against accidental disclosure. The name of
+          the client will be available to you in the user management page
+        </p>
+        <p>
+          3.2.1 Only authorised employees within eHuddle who, in the course of
+          their duties, can access and process information collected from
+          individual Users and are under a duty of confidentiality within their
+          terms of employment to handle data securely and confidentially. All
+          coaches agree to be held to a duty of confidentiality to the same
+          degree and are expected to handle personal data with the utmost
+          sensitivity and uphold all data protection regulations.
+        </p>
+        <p>
+          3.3 We are constantly reviewing our system and data to ensure the best
+          possible service to our Users. We will investigate any actual or
+          suspected specific offences for unauthorised actions, with a view to
+          bringing legal action for damages against those responsible.
+        </p>
+        <p>
+          3.4 Please see our <a href="./../privacy-policy/">Privacy Policy</a>for
+          more information.
+        </p>
+        <h4 class="sub-title">4. Subscriptions</h4>
+        <p>
+          4.1 Subject to payment by user of the Charges, eHuddle shall, during
+          the subscription term ("Subscription Term"), provide you, the Coach,
+          with a non-exclusive, non-transferable, non-outsourceable, revocable,
+          discretionary, royalty-free licence to permit the authorised use and
+          access to the Service for your business requirements; and agree to
+          perform support and customer services during designated business hours
+          (as determined by us).
+        </p>
+        <p>
+          4.2 Subscription fees and charges are non-cancellable and
+          non-refundable. Claims and requests for subscription fee refunds will
+          be reviewed on a case by case basis and will depend entirely on the
+          specific circumstances
+        </p>
+        <p>
+          4.3 The Service is billed on a subscription basis ("Subscription(s)").
+          You have the option to enter into an Annual Subscription, for which
+          you will pay your annual Subscription Charge upfront. You also have
+          the option to choose a Monthly subscription, which is a 30 day rolling
+          contract. In the event you choose to pay for your subscription
+          monthly, you will be billed once on a monthly basis, on or around the
+          date of service commencement anniversary each month, and on each
+          subsequent month thereafter for the duration of the agreement. For
+          more information on our pricing and subscriptions, please visit
+          <a href="./../privacy-policy/">pricing</a>
+        </p>
+        <p>
+          4.4 The Charges are exclusive of value added, sales, use or
+          withholding, or equivalent taxes in any jurisdiction ("Taxes"), which
+          if payable, will be additionally payable by the User at the
+          corresponding rate. Users shall be responsible for, and will not
+          withhold or deduct, any applicable Taxes on the Charges.
+        </p>
+        <p>
+          4.5.1 In the event that eHuddle is not able to obtain payment of any
+          payment from a User, eHuddle will inform the User without delay upon
+          becoming aware of the missed payment. eHuddle reserves the right to
+          suspend system access until a suitable payment option is made
+          available, through which eHuddle can secure Subscription Payments from
+          successfully.
+        </p>
+        <p>
+          4.5.2 Monthly Subscriptions: In the event that eHuddle is not able to
+          obtain payment of any monthly subscription charge from a User, eHuddle
+          will inform you upon becoming aware of the missed payment, and may
+          suspend your access to the system until a suitable payment option is
+          made available, through which eHuddle can secure Subscription Payments
+          from.
+        </p>
+        <p>
+          4.6 eHuddle has the right to increase the amount of Charges payable
+          for the Service at the start of each Subscription renewal period,
+          giving 30 day’s prior written notice to the User.
+        </p>
+        <h4 class="sub-title">5. Provision of Service</h4>
+        <h4 class="sub-title">5.1 Service Availability</h4>
+        <p>
+          eHuddle shall make all reasonable efforts to make the Services
+          available to the expected and acceptable level, except for where:
+        </p>
+        <ol class="list" type="i">
+          <li>
+            Planned downtime is scheduled for system repair or maintenance;
+          </li>
+          <li>
+            Where downtime is planned, eHuddle have given Users a reasonable
+            period of at least 5 day’s notice in advance of system outage;
+          </li>
+          <li>
+            Unscheduled maintenance in the case of actual or anticipated
+            emergency;
+          </li>
+          <li>
+            Unavailability for reasons out of eHuddle’s reasonable and expected
+            control.
+          </li>
+        </ol>
+        <p>
+          5.2 eHuddle shall, to the extent required for the provision of
+          Services under this agreement:
+        </p>
+        <ol class="list" type="i">
+          <li>
+            Perform the Services substantially in accordance with this agreement
+            and with reasonable care and skill;
+          </li>
+          <li>Comply with all applicable laws, and</li>
+          <li>
+            Maintain any licences and consents that are needed to Provide the
+            Service
+          </li>
+        </ol>
+        <p>
+          5.2.1 eHuddle shall make all reasonable efforts to promptly correct
+          any material non-conformance of the System. Users are responsible for
+          ensuring that the eHuddle Service meet its individual requirements and
+          is appropriate for their desired purpose.
+        </p>
+        <p>
+          5.2.2 eHuddle, in its discretion, may modify the system and Service if
+          it does not materially reduce the functionality of the system and may
+          provide alternative features so long as they have materially the same
+          benefits as previous features.
+        </p>
+        <h4 class="sub-title">6. User’s Obligations</h4>
+        <p>6.1 Through the use of the Service, You, the User, shall:</p>
+        <ol class="list" type="i">
+          <li>
+            Cooperate with eHuddle and provide any necessary information, as
+            required, to provide the Services to you. This may include the
+            creation of your account, the delivery of your Service and to
+            communicate with you for any reason relating to your membership to
+            the Service;
+          </li>
+          <li>
+            Comply with all laws applicable to this agreement and maintain the
+            necessary consents to allow the use of User Data in accordance with
+            this agreement, and applicable Data Protection Law and Regulations;
+          </li>
+          <li>
+            Coaches are responsible for ensuring that you keep your passwords
+            and username ("Account Details") safe and secure, and do not share
+            them with any unauthorised third parties;
+          </li>
+          <li>
+            Use reasonable efforts to prevent unauthorised access or use of the
+            Services
+          </li>
+        </ol>
+        <p>6.2 User shall not:</p>
+        <ol class="list" type="i">
+          <li>
+            Copy, modify, duplicate, creative derivative works from, frame,
+            mirror, republish, download, record, display, transmit or otherwise
+            distribute any portion of the system or Service that they do not
+            own;
+          </li>
+          <li>
+            Circumvent or disregard any security restrictions imposed by eHuddle
+            in an attempt to obtain, assist others in obtaining access to the
+            system with unauthorised use or purposes;
+          </li>
+          <li>
+            Use the Service in a way that could reasonable adversely affects the
+            system or other users of the Service;
+          </li>
+          <li>Make the system available to unauthorised third parties;</li>
+          <li>
+            Conduct what is considered inappropriate, excessive or abusive use
+            of the Service, including elements of the Service provided by
+            sub-processors on our behalf;
+          </li>
+          <li>
+            Access, store, distribute or transmit any viruses or infectious
+            files, or any process or publish material that could be considered
+            unlawful, harmful, threatening, defamatory, obscene, infringing,
+            harassing, discriminatory or offensive.
+          </li>
+        </ol>
+        <h4 class="sub-title">7. Intellectual Property</h4>
+        <p>
+          7.1 Nothing in this agreement shall constitute the transfer of any
+          intellectual property rights between eHuddle and the User. Users may
+          use the system as determined by their membership and the nature of
+          their eHuddle account as an end user or coaching personnel, and print
+          out any applicable works for coaching purposes, but eHuddle reserves
+          all other proprietary rights.
+        </p>
+        <p>
+          7.2 eHuddle shall grant you a non-exclusive, worldwide,
+          non-transferable, sub-licensable, fully revocable licence to use the
+          system and eHuddles Intellectual Property for the duration of your
+          subscription period. You may not otherwise use eHuddles IP, including
+          images, coaching material for your own commercial gain.
+        </p>
+        <p>
+          7.3 You, the User, grant eHuddle a non-exclusive licence to use your
+          Personal Data for the purposes of fulfilling our contract for services
+          with you, as determined by this Agreement.
+        </p>
+        <h4 class="sub-title">8. Indemnification and Liabilities</h4>
+        <p>
+          8.1 You agree to defend, indemnify, and hold harmless eHuddle, its
+          affiliates, licensors, and service providers, and its and their
+          respective officers, directors, employees, contractors, agents and
+          suppliers, from and against any claims, liabilities, damages,
+          judgments, awards, losses, costs, expenses, or fees (including
+          reasonable legal fees) arising out of or relating to your violation of
+          these Terms of Services or your use of the Services, including, but
+          not limited to, your User Contributions, any use of the Services’
+          content, services, and products other than as expressly authorised in
+          these Terms of Services.
+        </p>
+        <p>
+          8.2 IN NO EVENT WILL eHuddle BE LIABLE UNDER OR IN CONNECTION WITH THE
+          SERVICES OR THESE TERMS OF SERVICES UNDER ANY LEGAL OR EQUITABLE
+          THEORY, INCLUDING BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
+          STRICT LIABILITY, AND OTHERWISE, FOR ANY: (i) CONSEQUENTIAL,
+          INCIDENTAL, INDIRECT, EXEMPLARY, SPECIAL, ENHANCED, OR PUNITIVE
+          DAMAGES; (ii) INCREASED COSTS, DIMINUTION IN VALUE OR LOST BUSINESS,
+          PRODUCTION, REVENUES, OR PROFITS; (iii) LOSS OF GOODWILL OR
+          REPUTATION; (iv) USE, INABILITY TO USE, LOSS, INTERRUPTION, DELAY, OR
+          RECOVERY OF ANY DATA, OR BREACH OF DATA OR SYSTEM SECURITY; OR (v)
+          COST OF REPLACEMENT GOODS OR SERVICES, IN EACH CASE REGARDLESS OF
+          WHETHER eHuddle WAS ADVISED OF THE POSSIBILITY OF SUCH LOSSES OR
+          DAMAGES OR SUCH LOSSES OR DAMAGES WERE OTHERWISE FORESEEABLE. IN NO
+          EVENT WILL e-Huddle’s AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO
+          THE SERVICES OR THESE TERMS OF SERVICES UNDER ANY LEGAL OR EQUITABLE
+          THEORY, INCLUDING BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
+          STRICT LIABILITY, AND OTHERWISE EXCEED THE GREATER OF $1,000 OR THE
+          TOTAL AMOUNTS PAID OR PAYABLE TO eHuddle UNDER THESE TERMS OF SERVICES
+          DURING THE TWELVE MONTHS PRECEDING THE DATE WHEN THE CLAIM FOR SUCH
+          DAMAGES AROSE.
+        </p>
+        <h4 class="sub-title">9. Agreement Term and Termination</h4>
+        <p>
+          9.1 This agreement shall become enforceable on the Effective Date and
+          continue for an initial 12 month period (annual subscriptions), or 30
+          days rolling period (monthly subscription), and for all consecutive
+          periods thereafter, until terminated.
+        </p>
+        <p>
+          9.2 If you have subscripted to our Service on an annual basis, and
+          have paid all subscription charges upfront upon commencing with
+          eHuddle, and you express your wish to or actually terminate this
+          Agreement, your access to the system will remain valid until the
+          subscription expiry.
+        </p>
+        <p>
+          9.3 Either party may terminate this agreement by giving 30 days notice
+          to the other party. Any notice under this agreement shall be in
+          writing and shall be delivered by email to eHuddle using the email
+          address in section 11. eHuddle retains the right to terminate your
+          Subscription at any time, by providing to you written notice to and an
+          alert that your Subscription will expire at the end of the relevant
+          billing cycle.
+        </p>
+        <h4 class="sub-title">10. Jurisdiction</h4>
+        <p>
+          This agreement and any dispute or claim arising out of or in
+          connection with it or its subject matter or formation (including
+          non-contractual disputes or claims) shall be governed by and construed
+          in accordance with English law and subject to the exclusive
+          jurisdiction of the English courts.
+        </p>
+        <h4 class="sub-title">11. Contact Details</h4>
+        <p>
+          For questions relating to these Terms and Conditions, or any other
+          element of our Service of business, please contact us by email at
+          <a href="mailto:info@ehuddle.com">info@ehuddle.com</a> where we will
+          be glad to assist you!
+        </p>
+      </div>
+    </div>
+    <script src="./../assets/common.js"></script>
+  </body>
+</html>

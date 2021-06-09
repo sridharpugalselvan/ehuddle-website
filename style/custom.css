@@ -66,6 +66,14 @@ h1 {
   font-size: 2.34375rem; /* 36px */
 }
 
+.padL30 {
+  padding-left: 30px;
+}
+
+.mrgT16 {
+  margin-top: 16px;
+}
+
 .mrgT22i {
   margin-top: 22px !important;
 }
@@ -113,6 +121,40 @@ h1 {
   -moz-border-radius: 4px !important;
   -webkit-border-radius: 4px !important;
   border-radius: 4px !important;
+}
+
+.btn-scroll-top {
+  right: 30px;
+  z-index: 99;
+  bottom: 20px;
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  line-height: 25px;
+  font-size: 1.25rem;
+  border: 1px solid #eee !important;
+  outline: none !important;
+  color: #1582a4 !important;
+  background-color: #ffffff !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.btn-scroll-top:hover {
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
 }
 
 .footer-wrapper {
